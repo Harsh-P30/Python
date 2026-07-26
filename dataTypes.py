@@ -157,3 +157,59 @@ Methods in Dictionary
 - update()
 - values()
 '''
+
+# SET types
+# Set
+'''
+Set are used to store multiple items in a single variable.
+set is a collection which is unordered, unchangeable, and unindexed and don't allow duplicate values.
+Set are unchangeable but you can remove items and add new items.
+
+'''
+myset = {1,2,3,4,"one",1}
+print(myset)
+
+myset.add(45)
+
+'''
+Set methods
+- add()
+- clear()
+- copy()
+- difference()
+- difference_update()
+- discard()
+- intersection()
+- intersection_update()
+- isdisjoint()
+- issubset()
+- issuperset()
+- pop()
+- remove()
+- symmetric_difference()
+- symmetric_difference_update()
+- union()
+- update()
+
+'''
+
+# BINARY DATA IN PYTHON
+'''
+Python provides three built-in types to handel binary data efficiently:
+- bytes =  Immutable sequence of bytes.
+- bytearray = mutable sequence of bytes.
+- memoryview =  Provides a view object that allow manipulation of binary data without copying.
+'''
+# Creating a bytes object
+b1 = b'Hello'
+print(b1)  # Output: b'Hello'
+# Using bytes() constructor
+b2 = bytes([72, 101, 108, 108, 111])
+print(b2)  # Output: b'Hello'
+
+# A memoryview provides a view object that allows direct access to binary data without copying.
+# Creating memoryview from bytes
+b = b'Hello'
+mv = memoryview(b)
+# Accessing memoryview
+print(mv[1])
