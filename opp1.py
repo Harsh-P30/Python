@@ -1,0 +1,33 @@
+# Python classes and object
+# Almost everything in python is a object, with properties and method.
+
+# class Person:
+#     name = " Harsh"
+#     occupation = "Software Engineer"
+#     becam = "Billionaire"
+#     def info(self):
+#         print(f'{self.name} is a {self.occupation}')
+
+# a = Person() # creating object using class Person
+# print(a.name)
+# a.info()
+
+# __ini__ method in opps
+'''
+All classes have a built-in method called __inti__(),
+which is always executed when the class is being initiated.
+The __inti__() method is used to assign values to object propoerties, or
+to perform operations that are necessary when the object is being created.
+The __init__() method is called automatically every time 
+   the class is being used to create a new object.
+'''
+
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+p1 = Person("Harsh",21)
+print(p1.name)
+print(p1.age)
+print(f'name is {p1.name} and age {p1.age}')
