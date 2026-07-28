@@ -1,4 +1,5 @@
 # lambda function is a small anonymous function without a name. it is defined using the lambda keyword.
+# Syntax -> lambda arguments:expression
 
 # def double(x):
 #     print(x*2)
